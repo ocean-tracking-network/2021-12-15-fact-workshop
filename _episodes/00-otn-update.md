@@ -11,7 +11,7 @@ questions:
 
 The Ocean Tracking Network (OTN) supports global telemetry research by providing training, equipment, and data infrastructure to our large network of partners. 
 
-OTN and affiliated networks provide automated cross-referencing of your detection data with other tags in the system to help resolve "mystery detections" and provide detection data to taggers in other regions. OTN's Data Managers will also extensively quality-control your submitted metadata for errors to ensure the most accurate records possible are stored in the database. OTN's database and Data Portal website are excellent places to archive your datasets for future use and sharing with collaborators. We offer pathways to publish your datasets with OBIS, and via open data portals like ERDDAP, GeoServer etc. The data-product format returned by OTN is directly ingestible by analysis packages such as glatos and resonATe for ease of analysis. OTN offers support for the use of these packages and tools.
+OTN and affiliated networks (including FACT) provide automated cross-referencing of your detection data with other tags in the system to help resolve "mystery detections" and provide detection data to taggers in other regions. OTN's Data Managers will also extensively quality-control your submitted metadata for errors to ensure the most accurate records possible are stored in the database. OTN's database and Data Portal website are excellent places to archive your datasets for future use and sharing with collaborators. We offer pathways to publish your datasets with OBIS, and via open data portals like ERDDAP, GeoServer etc. The data-product format returned by OTN is directly ingestible by analysis packages such as glatos and resonATe for ease of analysis. OTN offers support for the use of these packages and tools.
 
 Learn more about OTN and our partners here [https://members.oceantrack.org/](https://members.oceantrack.org/).
 Please contact **OTNDC@DAL.CA** if you are interested in connecting with your regional network and learning about their affiliation with OTN.
@@ -48,9 +48,3 @@ Maintainer: Dr. Chris Holbrook, ( cholbrook@usgs.gov )
 This package was designed to facilitate the assimilation, analysis and synthesis of animal location and movement data collected by the VEMCO suite of acoustic transmitters and receivers. As well as database and geographic information capabilities the principal feature of [VTrack](https://cran.r-project.org/web/packages/VTrack/index.html) is the qualification and identification of ecologically relevant events from the acoustic detection and sensor data. This procedure condenses the acoustic detection database by orders of magnitude, greatly enhancing the synthesis of acoustic detection data. The development version of `VTrack` now houses a suit of functions called the 'Animal Tracking Toolbox' that helps users to follow a workflow to efficiently analyse acoustic telemetry data. You can find more information about the new functions in [this vignette](https://vinayudyawer.github.io/ATT/docs/ATT_Vignette.html). Learn more [here](https://github.com/RossDwyer/VTrack). 
 
 Maintainer: Dr. Vinay Udyawer ( vinay.udyawer@gmail.com )
-
-####  Intro to the `actel` Package
-
-This package is designed for studies where animals tagged with acoustic tags are expected to move through receiver arrays. `actel` combines the advantages of automatic sorting and checking of animal movements with the possibility for user intervention on tags that deviate from expected behaviour. The three analysis functions: explore, migration and residency, allow the users to analyse their data in a systematic way, making it easy to compare results from different studies.
-
-Author: Dr. Hugo Flavio, ( hflavio@wlu.ca )
