@@ -34,7 +34,7 @@ library(ggmap)
 # Working Directory ####
 
 
-setwd('YOUR-CUSTOM-PATH-HERE/2021-04-13-act-workshop/data') #set folder you're going to work in
+setwd('YOUR-CUSTOM-PATH-HERE/workshop/data') #set folder you're going to work in
 getwd() #check working directory
 
 #you can also change it in the RStudio interface by navigating in the file browser where your working directory should be
