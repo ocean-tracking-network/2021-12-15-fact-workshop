@@ -7,7 +7,6 @@ questions:
     - "What kinds of plots can I make with my data?"
 ---
 
-## FACT Node
 
 Now that we've cleaned and processed our data, we can use `glatos`' built-in plotting tools to make quick and effective visualizations out of it. One of the simplest visualizations is an abacus plot to display animal detections against the appropriate stations. To this end, `glatos` supplies a built-in, customizable `abacus_plot` function.
 
@@ -66,7 +65,7 @@ bubble_array
 
 These examples provide just a brief introduction to some of the plotting available in `glatos`.
 
-> ## Glatos FACT Challenge
+> ## `glatos` FACT Challenge
 >
 > Challenge 1 ----
 > Create a bubble plot of that bay we zoomed in earlier. Set the bounding box using the provided nw + se cordinates, change the colour scale and
