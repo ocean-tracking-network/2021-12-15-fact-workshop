@@ -8,11 +8,11 @@
 # Once R/RStudio is installed: open RStudio and run this install script. Please run it line-by-line instead of all at once in case there are errors.
 
 #Note: When running through the installs, you may encounter a prompt asking you to upgrade dependent packages.
-      #Choosing Option `3: None`, works in most situations and will prevent upgrades of packages you weren't explicitly looking to upgrade.
+#Choosing Option `3: None`, works in most situations and will prevent upgrades of packages you weren't explicitly looking to upgrade.
 
 
 
-## DAY 1 WORKSHOP REQUIREMENTS ----
+## STREAM 1 WORKSHOP REQUIREMENTS ----
 # Tidyverse (data cleaning and arrangement)
 install.packages('tidyverse')
 
@@ -25,16 +25,13 @@ install.packages('ggmap')
 # Plotly - Interactive web-based data visualization
 install.packages('plotly')
 
-# ReadXL - reads Excel format
-install.packages("readxl")
-
 # Viridis - color scales in this package are easier to read by those with colorblindness, and print well in grey scale.
 install.packages("viridis")
 
 
 
 
-## DAY 2 WORKSHOP REQUIREMENTS ----
+## STREAM 2 WORKSHOP REQUIREMENTS ----
 #rgdal
 install.packages('rgdal')
 library(rgdal)
@@ -50,7 +47,7 @@ devtools::install_github("rossdwyer/VTrack")
 
 # GLATOS - acoustic telemetry package that does filtering, vis, array simulation, etc.
 install.packages('remotes')
-library(remotes)
+library(remotes) 
 remotes::install_github('ocean-tracking-network/glatos')
 
 # Lubridate - part of Tidyverse, improves the process of creating date objects
@@ -69,17 +66,13 @@ install.packages('mapview')
 install.packages('spdplyr')
 install.packages('rgdal')
 
-# Install actel
-library(remotes)
-remotes::install_github("hugomflavio/actel",
-                        build_opts = c("--no-resave-data", "--no-manual"), build_vignettes = TRUE)
 
 ### Dataset and Code -----
-# Once the packages are installed, you can download the datasets and code for this workshop from [workshop-git-URL].
+# Once the packages are installed, you can download the datasets and code for this workshop from https://ocean-tracking-network.github.io/2021-12-15-fact-workshop/.
 # 1) Select the GREEN "code" button at the top and choose "Download ZIP"
 # 2) Unzip the folder and move to secure location on your computer (Documents, Desktop etc.)
 # 3) Copy the folder's path and use it to set your working directly in R using `setwd('<path-to-folder>')`.
 
 # If you are familiar with Git and Github, feel free to clone this repository as you normally would,
-# by running `git clone [workshop-git-URL].git` in a terminal program
+# by running `git clone https://ocean-tracking-network.github.io/2021-12-15-fact-workshop/.git` in a terminal program
 # and following from step 3 above.

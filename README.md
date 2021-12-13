@@ -1,2 +1,2 @@
-# 2021-04-14-OTNxACT-R-workshop
-Telemetry workshop materials for the ACT telemetry workshop occuring April 14 and 15, 2021
+# FACT Workshop Curriculum 2021-12-15
+Telemetry workshop materials created by OTN prepared for the Winter 2021 FACT Meeting.
