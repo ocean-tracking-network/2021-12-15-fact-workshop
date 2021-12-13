@@ -32,7 +32,7 @@ install.packages('ggmap')
 install.packages('plotly')
 
 # Viridis - color scales in this package are easier to read by those with colorblindness, and print well in grey scale.
-install.packages("viridis")
+install.packages('viridis')
 ```
 
 ### `glatos` Workshop Requirements
@@ -56,6 +56,7 @@ devtools::install_github("rossdwyer/VTrack")
 install.packages('remotes')
 library(remotes) 
 remotes::install_github('ocean-tracking-network/glatos')
+
 #Additional packages for mapping.
 install.packages('stringr')
 install.packages('mapview')
