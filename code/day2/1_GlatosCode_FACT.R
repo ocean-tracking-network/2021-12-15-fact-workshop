@@ -2,7 +2,7 @@
 
 ## Set your working directory
 
-setwd("./Work/otn-workshop-base/data/fact/")
+setwd("set/path/to/your/2021-12-15-fact-workshop/data/fact/")
 library(glatos)
 library(tidyverse)
 library(VTrack)
@@ -113,7 +113,7 @@ sum_animal_location
 
 # Create a custom vector of Animal IDs to pass to the summary function
 # look only for these ids when doing your summary
-tagged_fish <- c('TQCS-1049258-2008-02-14', '	TQCS-1049269-2008-02-28')
+tagged_fish <- c('TQCS-1049258-2008-02-14', 'TQCS-1049269-2008-02-28')
 
 sum_animal_custom <- summarize_detections(det=detections_filtered,
                                           animals=tagged_fish,  # Supply the vector to the function
@@ -225,6 +225,8 @@ library(raster)
 f <-  'http://biogeo.ucdavis.edu/data/gadm3.6/Rsp/gadm36_USA_1_sp.rds'
 b <- basename(f)
 download.file(f, b, mode="wb", method="curl")
+# if the above doesn't return a file:
+# download.file(f,b, method='wget', extra=c('--no-check-certificate'))
 USA <- readRDS('gadm36_USA_1_sp.rds')
 FL <- USA[USA$NAME_1=="Florida",]
 
@@ -238,7 +240,7 @@ plot(FL, xlim=c(-80.75, -80), ylim=c(27, 27.5), col='green', xlab="Longitude", y
 color <- c(colorRampPalette(c('pink', 'red'))(max(coa_single$Number.of.Detections)))
 
 #add the points
-plot.new()
+
 points(coa_single$Longitude.coa, coa_single$Latitude.coa, pch=19, col=color[coa_single$Number.of.Detections],
     cex=log(coa_single$Number.of.Stations) + 0.5) # cex is for point size. natural log is for scaling purposes
 
