@@ -170,8 +170,8 @@ rit_data
 
 ?prepare_deploy_sheet
 
-tags <- prepare_tag_sheet('TQCS_metadata_tagging.xlsx',sheet_name=1, header_line = 1)
-receivers <- prepare_deploy_sheet('TEQ_Deployments_201001_201201.xlsx', sheet_name = 1, header_line = 0)
+tags <- prepare_tag_sheet('TQCS_metadata_tagging.xlsx', sheet_name=1, header_line = 1)
+receivers <- prepare_deploy_sheet('TEQ_Deployments_201001_201201.xlsx', sheet_name = 1, header_line = 0, combine_arr_stn = FALSE)
 
 #tags <- tags %>%
 #  mutate(time = full_dates)
