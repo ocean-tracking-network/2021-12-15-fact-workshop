@@ -8,7 +8,7 @@ library(viridis)
 library(plotly)
 library(ggmap)
 
-setwd('C:/Users/ct991305/Documents/Workshop Material/one true workshop - WIP/FACT_data') #set folder you're going to work in
+setwd('path/to/your/2021-12-15-fact-workshop/data/fact') #set folder you're going to work in
 getwd() #check working directory
 
 # Intro to R --------
