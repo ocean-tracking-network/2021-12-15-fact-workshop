@@ -221,14 +221,13 @@ USA <- getData('GADM', country="USA", level=1)
 FL <- USA[USA$NAME_1=="Florida",]
 
 #Alternative method of getting the polygon. 
-library(raster)
-f <-  'http://biogeo.ucdavis.edu/data/gadm3.6/Rsp/gadm36_USA_1_sp.rds'
-b <- basename(f)
-download.file(f, b, mode="wb", method="curl")
+# f <-  'http://biogeo.ucdavis.edu/data/gadm3.6/Rsp/gadm36_USA_1_sp.rds'
+# b <- basename(f)
+# download.file(f, b, mode="wb", method="curl")
 # if the above doesn't return a file:
 # download.file(f,b, method='wget', extra=c('--no-check-certificate'))
-USA <- readRDS('gadm36_USA_1_sp.rds')
-FL <- USA[USA$NAME_1=="Florida",]
+# USA <- readRDS('gadm36_USA_1_sp.rds')
+# FL <- USA[USA$NAME_1=="Florida",]
 
 # plot the object and zoom in to St. Lucie River and Jupiter Inlet. Set colour of ground to green Add labels to the axises
 plot(FL, xlim=c(-80.75, -80), ylim=c(27, 27.5), col='green', xlab="Longitude", ylab="Latitude")
