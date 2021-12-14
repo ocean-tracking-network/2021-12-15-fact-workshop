@@ -60,12 +60,6 @@ install.packages('ggmap')
 install.packages('sp')
 install.packages('raster')
 
-#Additional packages for mapping.
-install.packages('stringr')
-install.packages('mapview')
-install.packages('spdplyr')
-install.packages('rgdal')
-
 
 ### Dataset and Code -----
 # Once the packages are installed, you can download the datasets and code for this workshop from https://ocean-tracking-network.github.io/2021-12-15-fact-workshop/.
