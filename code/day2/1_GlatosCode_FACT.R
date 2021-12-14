@@ -220,7 +220,7 @@ library(raster)
 USA <- getData('GADM', country="USA", level=1)
 FL <- USA[USA$NAME_1=="Florida",]
 
-#Alternative method of getting the polygon. 
+# Alternative method of getting the polygon. 
 library(raster)
 f <-  'http://biogeo.ucdavis.edu/data/gadm3.6/Rsp/gadm36_USA_1_sp.rds'
 b <- basename(f)
@@ -299,5 +299,5 @@ bubble_station
 # Hint: ?detection_bubble_plot will help a lot
 # Here's some code to get you started
 
-nw <- c(38.75, -76.75)
-se <- c(39, -76.25)
+nw <- c(26,-81) 
+se <- c(28, -80)
