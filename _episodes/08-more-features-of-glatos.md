@@ -73,8 +73,8 @@ We also need to quickly add some columns that FACT extracts do not have, since V
 detections_filtered['sensorvalue'] = NA
 detections_filtered['sensorunit'] = NA
 
-# Rename the station names in receivers to match station names in detections
-receivers <- receivers %>% mutate(station=substring(station, 4))
+# Rename the station names in receivers to match station names in detections (No longer needed with `combine_arr_stn`)
+# receivers <- receivers %>% mutate(station=substring(station, 4))
 ~~~
 {: .language-r}
 
