@@ -3,7 +3,6 @@
 # Installs and Setup --------
 library(tidyverse)# really neat collection of packages! https://www.tidyverse.org/
 library(lubridate)
-library(readxl)
 library(viridis)
 library(plotly)
 library(ggmap)
