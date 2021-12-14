@@ -196,7 +196,7 @@ that we want to see summarized.
 ~~~
 # create a custom vector of Animal IDs to pass to the summary function
 # look only for these ids when doing your summary
-tagged_fish <- c('TQCS-1049258-2008-02-14', '	TQCS-1049269-2008-02-28')
+tagged_fish <- c('TQCS-1049258-2008-02-14', 'TQCS-1049269-2008-02-28')
 
 sum_animal_custom <- summarize_detections(det=detections_filtered,
                                           animals=tagged_fish,  # Supply the vector to the function
