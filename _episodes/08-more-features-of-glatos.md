@@ -144,8 +144,17 @@ coa_single <- coa %>% filter(Tag.ID == 'TQCS-1049273-2008-02-28')
 # We'll use raster to get the polygon
 library(raster)
 
-#The line below might fail. If it does, refer to the steps above.
+#The line below might fail. If it does, use one of the alternate methods, or refer to the steps above to get the shapefile
 USA <- getData('GADM', country="USA", level=1)
+
+#Alternative method of getting the polygon. 
+# f <-  'http://biogeo.ucdavis.edu/data/gadm3.6/Rsp/gadm36_USA_1_sp.rds'
+# b <- basename(f)
+# download.file(f, b, mode="wb", method="curl")
+# if the above doesn't return a file:
+# download.file(f,b, method='wget', extra=c('--no-check-certificate'))
+# USA <- readRDS('gadm36_USA_1_sp.rds')
+
 FL <- USA[USA$NAME_1=="Florida",]
 
 # plot the object and zoom in to the St. Lucie River and Jupiter Inlet. Set colour of ground to green Add labels to the axises
