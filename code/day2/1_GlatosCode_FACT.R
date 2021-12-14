@@ -180,8 +180,8 @@ receivers <- prepare_deploy_sheet('TEQ_Deployments_201001_201201.xlsx', sheet_na
 detections_filtered['sensorvalue'] = NA
 detections_filtered['sensorunit'] = NA
 
-# Rename the station names in receivers to match station names in detections
-receivers <- receivers %>% mutate(station=substring(station, 4))
+# Rename the station names in receivers to match station names in detections (No longer needed with `combine_arr_stn`)
+# receivers <- receivers %>% mutate(station=substring(station, 4))
 
 ATTdata <- convert_otn_to_att(detections_filtered, tags, deploymentSheet = receivers)
 
