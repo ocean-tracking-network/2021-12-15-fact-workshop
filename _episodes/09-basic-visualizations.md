@@ -73,16 +73,16 @@ These examples provide just a brief introduction to some of the plotting availab
 > Hint: ?detection_bubble_plot will help a lot
 > Here's some code to get you started
 > ~~~
-> nw <- c(-81, -80) # given
-> se <- c(26, 28) # given
+> nw <- c(26,-81) # given
+> se <- c(28, -80) # given
 > ~~~
 > {: .language-r}
 >
 > > ## Solution
 > >
 > > ~~~
-> > nw <- c(38.75, -76.75) # given
-> > se <- c(39, -76.25) # given
+> > nw <- c(26,-81) # given
+> > se <- c(28, -80) # given
 > >
 > > bubble_challenge <- detection_bubble_plot(detections_filtered,
 > >                                      background_ylim = c(nw[1], se[1]),
